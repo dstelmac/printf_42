@@ -4,10 +4,15 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-RM = rm -f 
+RM = rm -f
 
-src = ft_printf.c \
-		
+SRC =	ft_printf.c \
+		ft_putstrl.c \
+		ft_putnbrl.c \
+		ft_puthexl.c \
+		ft_putaddl.c \
+		ft_putcharl.c \
+
 OBJ = $(SRC:.c=.o)
 
 $(NAME):	$(OBJ)
@@ -24,39 +29,3 @@ fclean:	clean
 re:	fclean all
 
 .PHONY: all clean fclean re
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
